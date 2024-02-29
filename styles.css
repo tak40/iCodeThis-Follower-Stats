@@ -1,0 +1,121 @@
+/** @format */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: dotted 1px red; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.social-followers {
+    background-color: rgb(247, 248, 255);
+    border-radius: 2px;
+    border-top: 5px solid #ffcc4d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5em;
+    gap: 1em;
+}
+
+.social-followers__title {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 90%;
+    margin: 1em auto 0;
+    text-align: center;
+}
+
+.social-card-container {
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    gap: 0.25em;
+    background-color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #e1306c;
+}
+
+.social-platform {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.social-platform i {
+    font-size: 2em;
+}
+
+.followers-count {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #505050;
+    margin-bottom: 8px;
+}
+
+.add-button {
+    background-color: #ffcc4d;
+    color: white;
+    font-size: 2.5em;
+    border: none;
+    width: 125px;
+    cursor: pointer;
+}
+
+.details-cta {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.social-card__hovered {
+    display: none;
+    color: white;
+}
+
+.social-card-container__hovered:hover .social-card__default {
+    display: none;
+}
+
+.social-card-container__hovered:hover {
+    background-color: #ffa76d;
+    cursor: pointer;
+}
+
+.social-card-container__hovered:hover .icon {
+    color: #ffffff;
+}
+
+.social-card-container__hovered:hover .social-card__hovered {
+    display: block;
+}
+
